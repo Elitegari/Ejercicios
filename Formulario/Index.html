@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+    
+    <form method="post" action="backend/form.php" enctype="multipart/form-data">
+        <h1>Registrar Usuario</h1> <br /><br/>
+
+        <label for="username">Nombre de Usuario</label> <input type="text" name="username" id="username" placeholder="Elitega541" required> <br />
+        
+        <label for="email"> Email </label> <input type="email" name="email" id="email" placeholder="xxxxx@gmail.com" required>
+       
+        <br /> <label for="pass1"> Contraseña </label> <input type="password" name="pass1" id="pass1" placeholder="...." required alt="strongpass" class="form-control"> 
+        <br /> <label for="pass2"> Repetir Contraseña </label> <input type="password" name="pass2" id="pass2" placeholder="...." required alt="strongpass" class="form-control"> 
+        
+        <br /> <br /> <label for="date"> Fecha de Nacimiento </label> <input type="date" required name="date" id="date"> <br /> <br />
+        <br /> 
+        
+        
+        <label for="comentario"> Hablanos de ti </label>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" minlength="10" maxlength="300" placeholder="Cuentanos Sobre Ti..." required> </textarea>
+       
+        
+        <br /> <br />
+        <label for="Como nos conosistes"> ¿Cómo nos conocistes?</label>
+        <select name="Como nos conocistes" id="como nos conocistes" required>
+            <option value="google"> google </option>
+            <option value="facebook">Facebook</option>
+            <option value="Email">Email</option>
+            <option value="Amigos">Amigos</option>
+            <option value="Publicidad">Publicidad</option>
+        </select>
+        <br />
+        <input type="submit" value="Registrarme" required />
+
+
+    </form>
+</body>
+</html>
